@@ -11,11 +11,35 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    overflow-x: hidden;
 }
 
 a, button {
     cursor: pointer;
+}
+
+/*Creating beautiful css underline*/
+a {
+	position: relative;
+	color: var(--color-red);
+	cursor: pointer;
+	line-height: 1; 
+	text-decoration: none; 
+}
+
+a:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: var(--color-red);
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%;
 }
 
 .title {
@@ -82,6 +106,7 @@ a, button {
 
 .header__wrapper {
     width: 1140px;
+    animation: 1.5s header__appear ease; 
 }
 
 .nav {
@@ -114,7 +139,7 @@ a, button {
 
 .nav__button {
     width: 163px;
-    height: 51px;   
+    height: 51px;  
 }
 
 @media screen and (max-width: 992px) {
@@ -179,6 +204,15 @@ a, button {
     width: 187px;
     height: 59px;
     margin-top: 40px;
+}
+
+/* Loading animation */
+@keyframes header__appear {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
 }
 
 /* Location */
