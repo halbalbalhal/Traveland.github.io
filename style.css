@@ -106,7 +106,7 @@ a:focus:after {
 
 .header__wrapper {
     width: 1140px;
-    animation: 1.5s header__appear ease; 
+    animation: 0.5s header__appear ease; 
 }
 
 .nav {
