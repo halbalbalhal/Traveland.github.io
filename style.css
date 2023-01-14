@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gelasio:wght@500;700&family=Ribeye&family=Roboto:wght@400;500&display=swap');
 
+/* common styles */
 *, *::after, *::before {
     padding: 0;
     margin: 0;
@@ -11,10 +12,15 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    scroll-behavior: smooth; 
 }
 
 a, button {
     cursor: pointer;
+}
+
+button:hover {
+    transform: skew(-10deg);
 }
 
 /*Creating beautiful css underline*/
@@ -42,6 +48,7 @@ a:focus:after {
 	width: 100%;
 }
 
+/* common classes */
 .title {
     font-family: 'Gelasio';
     font-weight: 500;
