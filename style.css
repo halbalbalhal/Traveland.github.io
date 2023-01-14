@@ -19,9 +19,6 @@ a, button {
     cursor: pointer;
 }
 
-button:hover {
-    transform: skew(-10deg);
-}
 
 /*Creating beautiful css underline*/
 a {
