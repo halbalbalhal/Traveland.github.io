@@ -23,6 +23,10 @@ button:hover {
     transform: skew(-10deg);
 }
 
+.hide {
+    display: none;
+}
+
 /*Creating beautiful css underline*/
 a {
 	position: relative;
@@ -174,6 +178,11 @@ a:focus:after {
     height: 3px;
     background-color: var(--color-white);
     border-radius: 2px;
+}
+
+.burger__menu {
+    position: absolute;
+    left: 500px;
 }
 
 .header__info {
