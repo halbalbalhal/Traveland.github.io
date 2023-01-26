@@ -9,7 +9,13 @@ function menuActivate() {
 
 function menuClose() {
     burgerMenu.style.display = 'none'
-    burgerButton.style.display = 'flex'
+	window.addEventListener("resize", function() {
+        if (window.matchMedia("(max-width: 1000px)").matches) {
+            burgerButton.style.display = 'flex'
+        } else {
+            burgerButton.style.display = 'none'
+        }
+    })
 }
 
 burgerButton.addEventListener('click', menuActivate)
